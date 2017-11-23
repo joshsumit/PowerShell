@@ -10,3 +10,6 @@ function Get-UserModulePath {
 }
  
 Invoke-Item (Get-UserModulePath)
+
+Import-Module Pester
+Get-Module -Name Pester | Select -ExpandProperty ExportedCommands
